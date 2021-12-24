@@ -1,0 +1,36 @@
+{% extends "living/base.html" %}
+{% block content %}
+{% load static %}
+
+<div style="text-align:center">
+    <h5>LivingSpring Community Church Media Website</h5>
+    <p style ="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">The ground and pillar of truth...</p>
+<!--    <h4>LivingSpring Community Church official media website</h4>-->
+</div>
+
+
+<br>
+<br>
+
+<img src="{% static 'living/headset2.png'%}" style="padding:5px;" class="center">
+
+<br>
+<br>
+
+<div style="background-color:#76D7C4; padding:20px; margin:0px; width:100%; height:100%;">
+    <a href="{% url 'the_messages' %}"><button class="btn btn-outline-secondary">Mid-Week/Sunday Teaching</button></a>
+
+    <br>
+    <br>
+
+    <a href="{% url 'tracks' %}"><button class="btn btn-secondary">Tracks</button></a>
+    <a href="{% url 'tracks' %}"><button class="btn btn-outline-secondary">Series</button></a>
+
+    <br>
+    <br>
+
+    <h4 style ="font-family:georgia,garamond,serif;font-style:italic; text-align:center">Latest</h4>
+    <a href="{% url 'tracks' %}"><img src="{% static 'living/Series3.png' %}" class="center" style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);"></a>
+</div>
+
+{% endblock %}
