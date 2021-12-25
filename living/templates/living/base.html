@@ -25,7 +25,7 @@
 <nav id="topNav" class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static 'living/lsc2.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span style="font-size:17px;">LivingSpring Media Page</span>
+        <span style="font-size:17px;">LSCC Media Page</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,16 +57,19 @@
     </div>
 </nav>
 
+
 {% block content %} {% endblock %}
 
 <!-- Footer -->
 <footer>
     <div class="footer-bottom" style="background-color:#292b2c;">
+        <div class="container">
             <div class="row">
                 <div class="col-md-5 footer-copyright">
-                    <p style="color:white; font-size:15px; text-align:center;">&copy; LivingSpring Community Church, 2021. All rights reserved</p>
+            <p style="color:white; font-size:15px;">&copy; LivingSpring Community Church, 2021. All rights reserved</p>
                 </div>
             </div>
+        </div>
     </div>
 </footer>
 
