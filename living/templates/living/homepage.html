@@ -28,9 +28,38 @@
 
     <br>
     <br>
+    <br>
+    <br>
 
-    <h4 style ="font-family:georgia,garamond,serif;font-style:italic; text-align:center">Latest</h4>
+    <h4 style ="font-family:georgia,garamond,serif;font-style:italic; text-align:center; text-shadow: 0 0 3px #292b2c;">Latest</h4>
     <a href="{% url 'tracks' %}"><img src="{% static 'living/Series3.png' %}" class="center" style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);"></a>
+
+    <br>
+    <br>
+    <hr class="container-fluid">
+
+    <h4 style ="font-family:georgia,garamond,serif;font-style:italic; text-align:center; text-shadow: 0 0 3px #292b2c;">E-book</h4>
+    <h5 style="text-align:center;">God in Love with Frail Man</h5>
+
+    <div class="row">
+        <div class="center">
+            <div class="column">
+                <a href="{% static 'living/GILWFM.pdf' %}" target="_blank"><img src="{% static 'living/frontpage.jpeg' %}" style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19); width:200px;"></a>
+            </div>
+            <div class="column">
+                <a href="{% static 'living/GILWFM.pdf' %}" target="_blank"><img src="{% static 'living/backpage.jpeg' %}" style="box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19); width:200px;"></a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center;">
+        <a href="{% static 'living/GILWFM.pdf' %}"><button class="btn btn-info">Read</button></a>
+    </div>
+
 </div>
+
+
 
 {% endblock %}
